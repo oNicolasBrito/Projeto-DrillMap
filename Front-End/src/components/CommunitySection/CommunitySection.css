@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.193);
+}
+.community {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding: 5rem;
+}
+.community-benefits {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+.community-text h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+}
+.community-text p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.benefits-container {
+  width: 17.7rem;
+  height: 25.9rem;
+  box-shadow: 0 0 7px black;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 1rem;
+}
+.benefits-container img {
+  width: 6rem;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.community-img {
+  background: linear-gradient(var(--verdeClaro), var(--verdeEscuro));
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -20%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.benefits-container h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 6rem;
+}
+.benefits-container p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.community button {
+  width: 26.1rem;
+  height: 5.1rem;
+  border-radius: 0.9rem;
+  border: none;
+  background: linear-gradient(var(--verdeClaro), var(--verdeEscuro));
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: auto;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .community {
+    padding: 0;
+    gap: 2rem;
+    position: absolute;
+    top: clamp(12rem, 42vw, 42vw);
+    width: 100%;
+  }
+  .community-text p,
+  .community-text h3 {
+    display: none;
+  }
+  .community-benefits {
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    padding-right: 19vw;
+    display: flex;
+  }
+  .benefits-container {
+    flex-direction: row;
+    align-items: center;
+    width: clamp(10rem, 50vw, 50rem);
+    height: clamp(2rem, 14vw, 14rem);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 24px 10px 10px;
+    position: relative;
+    background-color: white;
+  }
+  .benefits-container p {
+    font-size: clamp(0.3rem, 2vw, 2rem);
+  }
+  .community-img {
+    width: clamp(0.5rem, 13vw, 13rem);
+    height: clamp(0.5rem, 13vw, 13rem);
+    align-items: center;
+    display: flex;
+    margin-left: -35%;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+  }
+  .community-img img {
+    width: clamp(1rem, 10vw, 10rem);
+  }
+  .community button {
+    width: clamp(10rem, 40vw, 40rem);
+    height: clamp(1rem, 10vw, 10rem);
+    font-size: clamp(0.5rem, 3vw, 3rem);
+  }
+  .benefits-container-text h4 {
+    font-size: clamp(0.5rem, 3vw, 3rem);
+    margin: 0;
+    text-align: start;
+  }
+  .benefits-container-text p {
+    text-align: start;
+  }
+}
+@media (min-width: 451px) and (max-width: 1023px) {
+  .community {
+    width: 80%;
+    gap: 3rem;
+  }
+  .community-text h3 {
+    font-size: clamp(0.9rem, 1.9vw, 1.9vw);
+  }
+  .community-text p {
+    font-size: clamp(0.6rem, 1.2vw, 2rem);
+  }
+  .community-benefits {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .benefits-container {
+    flex-direction: row;
+    align-items: center;
+    width: clamp(3rem, 40vw, 40vw);
+    height: clamp(3rem, 10vw, 10vw);
+    background-color: white;
+    border-radius: 10px;
+  }
+  .community-img {
+    display: none;
+  }
+  .benefits-container-text {
+    padding: 20px;
+  }
+  .benefits-container-text h4 {
+    margin: 0;
+    text-align: start;
+    font-size: clamp(0.7rem, 1.8vw, 1.8vw);
+  }
+  .benefits-container-text p {
+    text-align: start;
+    font-size: clamp(0.6rem, 1.2vw, 2rem);
+  }
+  .community button {
+    width: clamp(3rem, 20vw, 20vw);
+    font-size: clamp(0.5rem, 1.5vw, 1.5vw);
+    height: clamp(3rem, 5vw, 5vw);
+  }
+}
+@media (min-width: 1024px) {
+  .community {
+    width: 80%;
+  }
+  .community-text h3 {
+    font-size: clamp(1.5rem, 1.3vw, 2.5rem);
+  }
+  .community-text p {
+    font-size: clamp(0.7rem, 0.9vw, 1.5rem);
+  }
+  .benefits-container {
+    width: clamp(13rem, 10vw, 18rem);
+    height: clamp(2rem, 15vw, 25rem);
+  }
+  .benefits-container-text h4 {
+    font-size: clamp(1rem, 1.2vw, 2rem);
+  }
+  .benefits-container-text p {
+    font-size: clamp(0.8rem, 0.8vw, 1.4rem);
+  }
+  .community-img {
+    width: clamp(7rem, 5vw, 10rem);
+    height: clamp(7rem, 5vw, 10rem);
+  }
+  .community-img img {
+    width: clamp(3rem, 3.5vw, 5rem);
+    height: clamp(3rem, 3.5vw, 5rem);
+  }
+  .community button {
+    font-size: clamp(1rem, 0.8vw, 1.5rem);
+    width: clamp(1.5rem, 10vw, 20rem);
+    height: clamp(1.5rem, 2.5vw, 4.5rem);
+  }
+}

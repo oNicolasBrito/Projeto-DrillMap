@@ -1,0 +1,40 @@
+.filters {
+  position: absolute;
+  z-index: 31;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 15px;
+  width: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: 8.5rem;
+  left: 50%;
+  transform: translateX(30%) translateX(100%);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.438);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.filters.show {
+  opacity: 1;
+}
+.filters p,
+.subFilters p {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filters p:hover,
+.subFilters p:hover {
+  color: var(--verdeEscuro);
+}
+@media (max-width: 450px) {
+  .filters {
+    left: clamp(1rem, 12vw, 12rem);
+    top: clamp(1rem, 15vw, 15rem);
+    width: clamp(1rem, 30vw, 30rem);
+  }
+  .filters p {
+    font-size: clamp(0.3rem, 2.7vw, 2.7rem);
+  }
+}

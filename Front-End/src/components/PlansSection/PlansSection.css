@@ -1,0 +1,193 @@
+.plans {
+  padding: 3.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--azulEscuro);
+}
+.plans h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.plans li {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.plans button {
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 0.9rem;
+  width: 26rem;
+  height: 5rem;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.plans h1 {
+  font-size: 4rem;
+}
+.plans span {
+  font-size: 6.4rem;
+}
+.plans h4 {
+  background-color: var(--verdeEscuro);
+  padding: 0.3rem 5.8rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: -56px;
+  margin-bottom: 2.7rem;
+}
+.plans hr {
+  width: 11.2rem;
+}
+.plans-description {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+.plans-title,
+.plans-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mensal hr {
+  border: 1px solid black;
+}
+.anual hr {
+  border: 1px solid white;
+}
+.anual h3,
+.anual h1 {
+  color: white;
+}
+.mensal {
+  background-color: white;
+}
+.mensal button {
+  background: linear-gradient(var(--verdeClaro), var(--verdeEscuro));
+  color: white;
+}
+.anual {
+  background: linear-gradient(var(--verdeClaro), var(--verdeEscuro));
+}
+.anual button {
+  background-color: white;
+  color: var(--verdeClaro);
+}
+.plans-section {
+  display: flex;
+  gap: 8.1rem;
+}
+.plans-option {
+  width: 32.3rem;
+  height: 46.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  box-shadow: 0 0 7px black;
+  padding: 4.2rem;
+}
+.plans-option h3 {
+  padding-bottom: 2.4rem;
+}
+.plans-option button {
+  margin-top: 2.4rem;
+}
+@media (max-width: 450px) {
+  .plans {
+    width: 100%;
+  }
+  .plans h3 {
+    font-size: clamp(1rem, 3.5vw, 3.5rem);
+  }
+  .plans li {
+    font-size: clamp(0.5rem, 2.5vw, 2.5rem);
+  }
+  .plans hr {
+    display: none;
+  }
+  .plans h4 {
+    display: none;
+  }
+  .plans-title h3 {
+    display: none;
+  }
+  .plans-option span,
+  .plans-option h1 {
+    font-size: clamp(1rem, 7vw, 7rem);
+  }
+  .plans-section {
+    flex-direction: column;
+    gap: clamp(2rem, 8vw, 8rem);
+  }
+  .plans-option {
+    flex-direction: row;
+    height: clamp(1rem, 18vw, 18rem);
+    width: clamp(1rem, 68vw, 68rem);
+    padding: 1.5rem;
+  }
+  .plans-description {
+    padding-bottom: 1.9rem;
+  }
+  .plans-button {
+    width: 10rem;
+    height: 2rem;
+  }
+  .plans-button button {
+    background: none;
+    width: max-content;
+    font-size: clamp(0.5rem, 3.5vw, 3.5vw);
+    box-shadow: none;
+  }
+  .mensal button {
+    color: var(--verdeEscuro);
+    margin: 0;
+  }
+  .anual button {
+    color: white;
+    margin: 0;
+  }
+  .plans-option.anual {
+    padding: 0;
+  }
+}
+@media (min-width: 451px) and (max-width: 1023px) {
+  .plans h3 {
+    font-size: clamp(1rem, 2vw, 2vw);
+  }
+  .plans hr {
+    display: none;
+  }
+  .plans-title h4 {
+    font-size: clamp(0.5rem, 1.5vw, 1.5vw);
+    width: clamp(0.5rem, 25vw, 25vw);
+    display: none;
+  }
+  .plans li {
+    font-size: clamp(1rem, 1.5vw, 1.5vw);
+  }
+  .plans-option {
+    width: clamp(2rem, 30vw, 30vw);
+    height: clamp(2rem, 40vw, 40vw);
+  }
+  .plans-option h1 {
+    font-size: clamp(1rem, 4vw, 4vw);
+  }
+  .plans-option h1 span {
+    font-size: clamp(2rem, 6vw, 6vw);
+  }
+  .plans-button button {
+    width: clamp(1rem, 15vw, 15vw);
+    height: clamp(1rem, 5vw, 5vw);
+    font-size: clamp(1rem, 1.5vw, 1.5vw);
+  }
+}
+@media (min-width: 1024px) {
+}
